@@ -1,0 +1,80 @@
+body,
+html {
+  height: 90%;
+  margin: 0;
+}
+.wrapper {
+  height: 100%;
+  background-color: white;
+}
+.name-web {
+  margin-top: 3rem;
+  font-size: 4rem;
+}
+.content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 90%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.sections {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.container-btn-mode {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 0;
+}
+.btn-mode {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  border: 2px solid black;
+  transition: background-color 0.5s;
+}
+.btn-mode i {
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  line-height: 30px;
+}
+.btn-mode.sun {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 1px solid transparent;
+}
+.btn-mode.moon {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.dark-mode {
+  background-color: #0e0e0e;
+  transition: background-color 0.5s;
+}
+.dark-mode .card {
+  background-color: #1a1c1e;
+}
+.dark-mode h5,
+.dark-mode p,
+.dark-mode td,
+.dark-mode .btn-contact {
+  color: white;
+}
+
+.dark-mode .btn-mode {
+  background-color: #1a1c1e;
+  border: 1px solid white;
+  color: white;
+}
